@@ -70,7 +70,7 @@ test_labels = test[:,-10:]
 #Dinh nghia model
 model = Sequential([
     Dense(1024, input_dim=np.shape(train_input)[1]),
-    Dense(512, input_dim=1024),
+    Dense(1024, input_dim=1024),
     Dropout(0.5),
     Activation('relu'),
     Dense(10),
